@@ -1,0 +1,114 @@
+# Stream Deck layout. Keys are numbered 0-14:
+#
+#    0  1  2  3  4
+#    5  6  7  8  9
+#   10 11 12 13 14
+#
+# Per button:
+#   key    = 0..14
+#   label  = text shown on the key (optional)
+#   color  = background "#rrggbb"
+#   icon   = "icons/whatever.png"  (your own image, optional)
+#   glyph  = "E8C6"                (Segoe Fluent Icons codepoint, optional;
+#                                   browse them in Windows "Character Map")
+#   action = { type = "hotkey", keys = "ctrl+c" }
+#            { type = "text",   text = "hello" }
+#            { type = "run",    command = "notepad" }
+#
+# Save this file while the program runs and the deck updates instantly.
+
+brightness = 70
+
+# ---- row 1: clipboard ----
+[[button]]
+key = 0
+label = "Cut"
+color = "#c0392b"
+glyph = "E8C6"
+action = { type = "hotkey", keys = "ctrl+x" }
+
+[[button]]
+key = 1
+label = "Copy"
+color = "#2980b9"
+glyph = "E8C8"
+action = { type = "hotkey", keys = "ctrl+c" }
+
+[[button]]
+key = 2
+label = "Paste"
+color = "#27ae60"
+glyph = "E77F"
+action = { type = "hotkey", keys = "ctrl+v" }
+
+[[button]]
+key = 3
+label = "Plain Paste"
+color = "#16a085"
+glyph = "E77F"
+action = { type = "hotkey", keys = "ctrl+shift+v" }
+
+[[button]]
+key = 4
+label = "Clipboard"
+color = "#8e44ad"
+glyph = "F0E3"
+action = { type = "hotkey", keys = "win+v" }
+
+# ---- row 2: editing ----
+[[button]]
+key = 5
+label = "Undo"
+color = "#7f8c8d"
+glyph = "E7A7"
+action = { type = "hotkey", keys = "ctrl+z" }
+
+[[button]]
+key = 6
+label = "Redo"
+color = "#7f8c8d"
+glyph = "E7A6"
+action = { type = "hotkey", keys = "ctrl+y" }
+
+[[button]]
+key = 7
+label = "Select All"
+color = "#34495e"
+glyph = "E8B3"
+action = { type = "hotkey", keys = "ctrl+a" }
+
+# ---- row 3: screen capture ----
+[[button]]
+key = 10
+label = "Snip"
+color = "#d35400"
+glyph = "E7A8"
+action = { type = "hotkey", keys = "win+shift+s" }
+
+[[button]]
+key = 11
+label = "Full Screen"
+color = "#e67e22"
+glyph = "E722"
+action = { type = "hotkey", keys = "printscreen" }
+
+[[button]]
+key = 12
+label = "Window"
+color = "#f39c12"
+glyph = "E737"
+action = { type = "hotkey", keys = "alt+printscreen" }
+
+[[button]]
+key = 13
+label = "Record"
+color = "#c0392b"
+glyph = "E714"
+action = { type = "hotkey", keys = "win+shift+r" }
+
+[[button]]
+key = 14
+label = "Screenshots"
+color = "#2c3e50"
+glyph = "E8B7"
+action = { type = "run", command = "%USERPROFILE%\\Pictures\\Screenshots" }
